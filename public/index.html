@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dark Souls Trivia</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="main-menu">
+    <h1>Dark Souls Trivia</h1>
+    <input type="text" id="player-name" placeholder="Enter your name" />
+    <button id="join-room">Join Room</button>
+  </div>
+
+  <div id="game-room" style="display: none;">
+    <h2>Room</h2>
+    <h3>Leaderboard</h3>
+    <div id="leaderboard"></div>
+    <div id="question-card"></div>
+    <input type="text" id="answer" placeholder="Type your answer..." />
+    <button id="submit-answer">Submit</button>
+  </div>
+
+  <div id="game-over-modal" style="display:none;">
+  <h2>Game Over!</h2>
+  <p id="winner-name"></p>
+  <p id="winner-score"></p>
+  <button onclick="location.reload();">Play Again</button>
+</div>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="script.js" defer></script>
+</body>
+</html>

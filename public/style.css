@@ -1,0 +1,69 @@
+@import url("./assets/fonts/TrajanPro-Regular.ttf");
+@import url("./assets/fonts/TrajanPro-Bold.otf");
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    background: #111;
+    color: #eee;
+    text-align: center;
+    background-image: url("./assets/photos/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+h1,
+h2 {
+    font-family: "Trajan Pro";
+    font-weight: bold;
+    font-size: 72px;
+    background: -webkit-linear-gradient(#eee, #ccc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+
+button {
+    padding: 10px 20px;
+    background: #444;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button:hover {
+    background: #555;
+}
+
+input {
+    padding: 8px 16px
+}
+
+h3 {
+    font-family: "Trajan Pro";
+    font-weight: bold;
+    font-size: 32px;
+    background: -webkit-linear-gradient(#eee, #ccc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+#leaderboard,
+#question-card,
+#winner-name {
+    padding: 12px 0px;
+    font-size: 24px;
+}
+
+#question-card,
+#winner-score {
+    font-size: 18px;
+}
